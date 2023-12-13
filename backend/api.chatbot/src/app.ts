@@ -5,7 +5,7 @@ import routes from './routes';
 import { loadEnvVars } from './middleware/loadEnvVars';
 import { validateRequestBody } from './middleware/validateRequestBody';
 import logger from './utils/logger';
-import Klu from 'klu';
+import Klu from '../klu';
 
 // Load environment variables
 loadEnvVars();
