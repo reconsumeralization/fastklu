@@ -14,8 +14,8 @@ on:
         required: true
         type: string
       issue_body:
-        description: 'My mistakes are vast and many. Mitigate them and save the code.'
-        default: 'Please provide details about the mistakes that I make that you fix andd the improvements that make, ensuring to test them all and write guides about your efforts..'
+        description: 'Please provide details about the mistakes that I make that you fix and the improvements that you make, ensuring to test them all and write guides about your efforts.'
+        default: 'My mistakes are vast and many. Mitigate them and save the code.'
         required: true
         type: string
 
@@ -35,5 +35,5 @@ jobs:
       run: |
         issue_number=${{ steps.create_issue.outputs.issue_number }}
         curl -X POST -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
-          -d '{"body": "Thank you for your suggestion! We'll review it as soon as possible."}' \
+          -d '{"body": "Thank you for your suggestion! We\'ll review it as soon as possible."}' \
           "https://api.github.com/repos/${{ github.event.inputs.repository }}/issues/${issue_number}}/comments"
