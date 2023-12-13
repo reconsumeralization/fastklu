@@ -5,7 +5,7 @@ import routes from './routes';
 import { loadEnvVars } from './middleware/loadEnvVars';
 import { validateRequestBody } from './middleware/validateRequestBody';
 import logger from './utils/logger';
-import Klu from 'klu';
+import { KluAISDK } from './kluai-sdk.py';
 
 // Load environment variables
 loadEnvVars();
@@ -34,7 +34,7 @@ app.use('/api', routes);
 // Add new route for Klu.AI Python SDK
 app.get('/api', async (req, res) => {
   // Add your Klu.AI Python SDK code here
-  const klu = new Klu(process.env.KLU_API_KEY);
+  const kluAISDK = new KluAISDK(process.env.KLU_API_KEY);
 });
 
 // Catch all unhandled errors
