@@ -2,14 +2,14 @@ import express from 'express';
 
 
 import routes from './routes';
-import { loadEnvVars } from './middleware/loadEnvVars';
+
 import { validateRequestBody } from './middleware/validateRequestBody';
 import logger from './utils/logger';
 import { KluAISDK } from './kluai-sdk.py';
 
 
 // Load environment variables
-loadEnvVars();
+
 
 const app = express();
 
