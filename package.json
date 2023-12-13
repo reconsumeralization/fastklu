@@ -2,10 +2,10 @@
   "name": "klu-chatbot",
   "version": "1.0.0",
   "description": "A comprehensive Klu chatbot project",
-  "main": "backend/api.chatbot/src/index.js",
+  "main": "backend/api.chatbot/src/index.ts",
   "proxy": "http://localhost:5000",
   "scripts": {
-    "start": "node backend/api.chatbot/src/app.js",
+    "start": "ts-node backend/api.chatbot/src/app.ts",
     "dev": "concurrently \"npm run start\" \"npm run server\"",
     "build": "react-scripts build",
     "test": "jest",
@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yourusername/klu-chatbot.git"
+    "url": "git+https://github.com/reconsumeralization/klu-chatbot.git"
   },
   "keywords": [
     "chatbot",
@@ -24,45 +24,36 @@
   "author": "Your Name",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/yourusername/klu-chatbot/issues"
+    "url": "https://github.com/reconsumeralization/klu-chatbot/issues"
   },
-  "homepage": "https://github.com/yourusername/klu-chatbot#readme",
+  "homepage": "https://github.com/reconsumeralization/klu-chatbot#readme",
   "dependencies": {
-    "@hapi/joi": "^17.1.1",
-    "@types/express": "^4.17.21",
-    "axios": "^1.6.2",
-    "bcryptjs": "^2.4.3",
     "cors": "^2.8.5",
-    "dotenv": "^8.2.0",
-    "eslint": "^7.19.0",
-    "express": "^4.18.2",
-    "jest": "^26.6.3",
-    "joi": "^17.11.0",
-    "jsonwebtoken": "^9.0.2",
-    "klu": "^0.0.2",
-    "mongoose": "^5.11.15",
+    "dotenv": "^16.3.1",
+    "eslint": "^8.55.0",
+    "express": "^4.17.1",
+    "jest": "^29.7.0",
+    "mongoose": "^8.0.3",
     "nodemon": "^3.0.2",
-    "pg": "^8.11.3",
-    "react": "17.0",
-    "react-dom": "^17.0.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "semver": "^7.5.4",
-    "simple-update-notifier": "^2.0.0"
+    "simple-update-notifier": "^2.0.0",
+    "typescript": "^5.3.3"
   },
   "devDependencies": {
-    "@types/bcrypt": "^5.0.2",
-    "@types/node": "^14.14.31",
-    "@types/pg": "^8.10.9",
-    "@types/react": "^17.0.2",
-    "@types/react-dom": "^17.0.1",
-    "@typescript-eslint/eslint-plugin": "^4.15.1",
-    "@typescript-eslint/parser": "^4.15.1",
-    "concurrently": "^5.3.0",
-    "eslint-config-airbnb": "^18.2.1",
+    "@types/node": "^20.10.4",
+    "@types/react": "^18.2.45",
+    "@types/react-dom": "^18.2.17",
+    "@typescript-eslint/eslint-plugin": "^6.14.0",
+    "@typescript-eslint/parser": "^6.14.0",
+    "concurrently": "^8.2.2",
+    "eslint-config-airbnb": "^19.0.4",
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-jsx-a11y": "^6.4.1",
     "eslint-plugin-react": "^7.22.0",
     "eslint-plugin-react-hooks": "^4.2.0",
-    "ts-node": "^10.9.2",
+    "ts-node": "^10.4.0",
     "typescript": "^5.3.3"
   }
 }
