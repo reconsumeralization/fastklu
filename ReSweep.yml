@@ -23,7 +23,7 @@ actions:
     description: "Format the relevant files"
   test:
     command: "npm run test"
-    description: "Run tests on the relevant files"
+    description: "Run tests on all relevant files"
 
 # Specify the file patterns to be ignored during sweeping
 ignore:
