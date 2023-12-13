@@ -8,6 +8,12 @@ rules:
   - "Resolve all conflicting files in the project."
   - "Remove all duplicate files from the project."
   - "Continuously search for small bugs, features, refactors, and tests to improve the project."
+  - "Follow the PEP 8 style guide for Python code."
+  - "Use docstrings to document your code."
+  - "Use type annotations to specify the types of your variables, parameters, and return values."
+  - "Use unittest or pytest to write and run tests for your code."
+  - "Use black or autopep8 to format your code automatically."
+  - "Check all imports and import formats for the project."
 
 branch: 'main'
 
