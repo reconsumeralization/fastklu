@@ -1,0 +1,39 @@
+name: Create Issue Workflow
+
+on:
+  workflow_dispatch:
+    inputs:
+      repository:
+        description: 'Reconsumeralization Realization of consumeralism is not Reconsumeralization'
+        default: 'reconsumeralization/fastklu'
+        required: true
+        type: string
+      issue_title:
+        description: 'Fix my Mistakes'
+        default: 'Improvement Suggestions and Error Correction with Tests Abound'
+        required: true
+        type: string
+      issue_body:
+        description: 'My mistakes are vast and many. Mitigate them and save the code.'
+        default: 'Please provide details about the mistakes that I make that you fix andd the improvements that make, ensuring to test them all and write guides about your efforts..'
+        required: true
+        type: string
+
+jobs:
+  create_issue:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Create GitHub Issue
+      run: |
+        response=$(curl -X POST -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
+          -d '{"title": "${{ github.event.inputs.issue_title }}", "body": "${{ github.event.inputs.issue_body }}" }' \
+          "https://api.github.com/repos/${{ github.event.inputs.repository }}/issues")
+        echo "::set-output name=issue_number::$(echo "$response" | jq -r '.number')"
+
+    - name: Comment on the Created Issue
+      run: |
+        issue_number=${{ steps.create_issue.outputs.issue_number }}
+        curl -X POST -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
+          -d '{"body": "Thank you for your suggestion! We'll review it as soon as possible."}' \
+          "https://api.github.com/repos/${{ github.event.inputs.repository }}/issues/${issue_number}}/comments"
