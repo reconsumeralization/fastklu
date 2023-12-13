@@ -1,6 +1,6 @@
 // Import necessary modules and services
 import * as express from 'express';
-import conversationService from './conversationService';  // Assuming conversationService is in the same directory
+import { conversationService } from 'path_to_conversationService_file';
 
 // Create a router instance
 const router = express.Router();
