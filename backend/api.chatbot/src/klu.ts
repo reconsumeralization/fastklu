@@ -1,4 +1,4 @@
-import Klu from 'klu';
+import Klu from '@kluai/core';
 import logger from './utils/logger';
 
 class KluIntegration {
