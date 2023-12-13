@@ -35,7 +35,9 @@ app.use('/api', routes);
 // Add new route for Klu.AI Python SDK
 app.get('/api', async (req, res) => {
 
-  // Add your Klu.AI Python SDK code here
+  import Klu from './klu';
+
+const klu = new Klu(process.env.KLU_API_KEY);
   const kluAISDK = new KluAISDK(process.env.KLU_API_KEY);
 });
 
