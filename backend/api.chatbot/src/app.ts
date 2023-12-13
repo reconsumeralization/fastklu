@@ -4,7 +4,7 @@ import express from 'express';
 import routes from './routes';
 
 import { validateRequestBody } from './middleware/validateRequestBody';
-import logger from './utils/logger';
+
 import { KluAISDK } from './kluai-sdk.py';
 
 
