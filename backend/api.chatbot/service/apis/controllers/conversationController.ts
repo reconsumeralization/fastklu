@@ -20,6 +20,9 @@ class ConversationController {
   await this.kluController.createModel();
   await this.kluController.trainModel();
   await this.kluController.evaluateModel();
+  await this.kluController.deployModel();
+  await this.kluController.trainModel();
+  await this.kluController.evaluateModel();
   await kluController.deployModel();
   await this.kluController.createKnowledgeGraph();
   await this.kluController.addEntityToGraph();
