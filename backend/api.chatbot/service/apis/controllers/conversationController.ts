@@ -26,7 +26,7 @@ class ConversationController {
   await this.kluController.deployModel();
   await this.kluController.trainModel();
   await this.kluController.evaluateModel();
-  await kluController.deployModel();
+  await this.kluController.createUser(); // Manage users
   await this.kluController.createKnowledgeGraph();
   await this.kluController.addEntityToGraph();
   await this.kluController.addRelationshipToGraph();
