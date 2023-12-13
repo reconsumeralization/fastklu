@@ -11,6 +11,8 @@ class ConversationController {
   // Replace this comment with the code for interacting with the Klu endpoints, managing actions, data, models, knowledge graph, users, API keys, and workspaces
   // Example:
   await this.kluController.listWorkspaces();
+  await this.kluController.createWorkspace(); 
+  await this.kluController.getWorkspace();
   await this.kluController.createApplication();
   await this.kluController.createAction();
   await this.kluController.listActions();
