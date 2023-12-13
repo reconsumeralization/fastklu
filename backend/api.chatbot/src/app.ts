@@ -1,5 +1,5 @@
 import express from 'express';
-import bodyParser from 'body-parser';
+
 import cors from 'cors';
 import routes from './routes';
 import { loadEnvVars } from './middleware/loadEnvVars';
@@ -17,11 +17,11 @@ const app = express();
 app.use(cors());
 
 // Parse incoming requests data
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: false }));
+
+
 
 // Validate request body
-app.use(validateRequestBody);
+import validateRequestBody from './middleware/validateRequestBody';
 
 // Log requests
 app.use((req, res, next) => {
