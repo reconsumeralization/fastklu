@@ -14,6 +14,12 @@ rules:
   - "Use unittest or pytest to write and run tests for your code."
   - "Use black or autopep8 to format your code automatically."
   - "Check all imports and import formats for the project."
+  - "Ensure all code changes are reflected in the corresponding documentation."
+  - "Perform code reviews for all changes, regardless of size."
+  - "Enforce a code freeze period before major releases to stabilize the codebase."
+  - "Assign a dedicated team member to triage new bugs and feature requests."
+  - "Run performance tests after significant code changes."
+  - "Create a rollback plan for every major change."
 
 branch: 'main'
 
