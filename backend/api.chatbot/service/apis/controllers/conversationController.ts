@@ -17,7 +17,10 @@ class ConversationController {
   await this.kluController.callAction();
   await this.kluController.createDataset();
   await this.kluController.uploadData();
-  await this.kluController.createModel();
+  await this.kluController.createKnowledgeGraph(); // Create knowledge graph
+    await this.kluController.addEntityToGraph(); // Add entity to knowledge graph
+    await this.kluController.addRelationshipToGraph(); // Add relationship to knowledge graph
+    await this.kluController.queryGraph(); // Query the knowledge graph
   await this.kluController.trainModel();
   await this.kluController.evaluateModel();
   await this.kluController.deployModel();
