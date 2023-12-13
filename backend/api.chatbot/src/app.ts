@@ -39,9 +39,6 @@ app.get('/api', async (req, res) => {
 });
 
 // Catch all unhandled errors
-app.use((err, req, res, next) => {
-  logger.error(err.stack);
-  res.status(500).send('Internal Server Error');
-});
+
 
 export default app;
