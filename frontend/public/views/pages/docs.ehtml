@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Klu Chatbot - Documentation</title>
+    <link rel="stylesheet" href="/styles/main.css">
+    <script src="/scripts/main.js" defer></script>
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/contact">Contact</a></li>
+            <li><a href="/faq">FAQ</a></li>
+            <li><a href="/docs">Docs</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>Documentation</h1>
+        <p>Welcome to the Klu Chatbot documentation page. Here you will find detailed information about how to use our chatbot, its features, and how it works.</p>
+        <!-- Add more detailed documentation here -->
+    </div>
+    <footer>
+        <p>&copy; 2022 Klu Chatbot. All rights reserved.</p>
+    </footer>
+</body>
+</html>

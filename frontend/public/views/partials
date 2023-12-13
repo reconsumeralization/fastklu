@@ -1,0 +1,36 @@
+name:$frontend/public/views/partials/header.ehtml
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Klu Chatbot</title>
+    <link rel="stylesheet" href="/styles/main.css">
+</head>
+<body>
+```
+
+name:$frontend/public/views/partials/navbar.ehtml
+
+```html
+<nav class="navbar">
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/contact">Contact</a></li>
+        <li><a href="/faq">FAQ</a></li>
+        <li><a href="/docs">Docs</a></li>
+    </ul>
+</nav>
+```
+
+name:$frontend/public/views/partials/footer.ehtml
+
+```html
+<footer class="footer">
+    <p>&copy; 2022 Klu Chatbot. All rights reserved.</p>
+</footer>
+</body>
+</html>
+```

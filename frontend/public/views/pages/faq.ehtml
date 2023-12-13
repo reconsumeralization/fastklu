@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Klu Chatbot - FAQ</title>
+    <link rel="stylesheet" href="/styles/main.css">
+    <script src="/scripts/main.js" defer></script>
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/contact">Contact</a></li>
+            <li><a href="/faq">FAQ</a></li>
+            <li><a href="/docs">Docs</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>Frequently Asked Questions</h1>
+        <h2>What is Klu Chatbot?</h2>
+        <p>Klu Chatbot is an intelligent chatbot designed to understand and interpret human languages, guide users through interactive sessions, and provide tailored responses to user requests.</p>
+        <h2>How does Klu Chatbot work?</h2>
+        <p>Klu Chatbot uses machine learning algorithms and techniques to classify user utterances based on associated intentions. It identifies crucial entities mentioned within user messages, allowing the bot to reason about the context. The bot then decides the next actions depending on the recognized user intention, extracted entities, and tracked contextual information.</p>
+        <h2>How can I use Klu Chatbot?</h2>
+        <p>You can interact with Klu Chatbot through our user-friendly web interface. Simply type your message in the chatbox and wait for the bot's response.</p>
+    </div>
+</body>
+</html>
