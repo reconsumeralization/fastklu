@@ -7,7 +7,7 @@ import KluController from './kluController';
 class ConversationController {
   // Existing code for conversation controller
 
-  // Add your Klu.AI Python SDK code here
+  const kluController = new KluController("YOUR_API_KEY");
   // Replace this comment with the code for interacting with the Klu endpoints, managing actions, data, models, knowledge graph, users, API keys, and workspaces
   // Example:
   await this.kluController.listWorkspaces();
@@ -20,7 +20,7 @@ class ConversationController {
   await this.kluController.createModel();
   await this.kluController.trainModel();
   await this.kluController.evaluateModel();
-  await this.kluController.deployModel();
+  await kluController.deployModel();
   await this.kluController.createKnowledgeGraph();
   await this.kluController.addEntityToGraph();
   await this.kluController.addRelationshipToGraph();
