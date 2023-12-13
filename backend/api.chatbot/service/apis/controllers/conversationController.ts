@@ -7,7 +7,7 @@ import KluController from './kluController';
 class ConversationController {
   // Existing code for conversation controller
 
-  const klu = new KluController("YOUR_API_KEY");
+  const klu = new KluController(process.env.KLU_API_KEY);
   // Replace this comment with the code for interacting with the Klu endpoints, managing actions, data, models, knowledge graph, users, API keys, and workspaces
   // Example:
   await this.kluController.listWorkspaces();
