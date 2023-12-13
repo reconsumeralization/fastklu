@@ -1,4 +1,4 @@
-import Klu from 'klu';
+import Klu from '@kluai/core';
 import logger from './utils/logger';
 
 class KluIntegration {
@@ -22,7 +22,7 @@ class KluIntegration {
 
   async handleApiRoute(req: express.Request, res: express.Response) {
     try {
-      // Add your Klu.AI Python SDK code here
+      // this.handleApiRoute(req: express.Request, res: express.Response)
       // Use this.kluClient to interact with the Klu endpoints
 
       res.status(200).send('Success');
