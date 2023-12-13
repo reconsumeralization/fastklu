@@ -1,0 +1,31 @@
+# ReSweep Configuration
+
+# Specify the rules for sweeping the repository
+rules:
+  - name: "README.md"
+    include:
+      - "frontend/public/views/pages/**"
+      - "frontend/public/views/partials/**"
+    exclude:
+      - "frontend/public/views/pages/contact.ehtml"
+    actions:
+      - lint
+      - format
+      - test
+
+# Specify the actions to be performed on the relevant files
+actions:
+  lint:
+    command: "npm run lint"
+    description: "Run linting on the relevant files"
+  format:
+    command: "npm run format"
+    description: "Format the relevant files"
+  test:
+    command: "npm run test"
+    description: "Run tests on the relevant files"
+
+# Specify the file patterns to be ignored during sweeping
+ignore:
+  - "node_modules/**"
+  - ".git/**"
