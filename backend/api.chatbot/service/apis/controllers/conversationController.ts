@@ -11,7 +11,7 @@ class ConversationController {
   private kluController: KluController;
 
   constructor() {
-    this.kluController = new KluController();
+    this.kluController = new KluController("YOUR_API_KEY");
   }
 
   // Existing functions for conversation controller
