@@ -1,6 +1,6 @@
 import express from 'express';
 
-import cors from 'cors';
+
 import routes from './routes';
 import { loadEnvVars } from './middleware/loadEnvVars';
 import { validateRequestBody } from './middleware/validateRequestBody';
@@ -14,7 +14,7 @@ loadEnvVars();
 const app = express();
 
 // Enable Cross Origin Resource Sharing
-app.use(cors());
+
 
 // Parse incoming requests data
 
